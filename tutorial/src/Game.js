@@ -1,7 +1,6 @@
 import React from 'react';
-//import ReactDOM from 'react-dom';
 import './index.css';
-//import { BrowserRouter, Route } from 'react-router-dom';
+
 
 function calculateWinner(squares) {
 	const lines = [

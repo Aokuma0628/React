@@ -1,6 +1,4 @@
 import * as React from "react";
-import { Link } from "react-router-dom";
-
 
 
 function About() {
@@ -13,9 +11,6 @@ function About() {
           think?
         </p>
       </main>
-      <nav>
-        <Link to="/">Home</Link>
-      </nav>
     </>
   );
 }
