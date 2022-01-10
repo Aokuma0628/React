@@ -3,6 +3,11 @@ import { Routes, Route, Link } from "react-router-dom";
 import About from "./About";
 import Game from "./Game";
 import Ch2 from "./Ch2";
+import Ch3 from "./Ch3";
+import Ch3sub from "./Ch3sub";
+import Ch3sub2 from "./Ch3sub2";
+import Ch3sub3 from "./Ch3sub3";
+import './App.css';
 
 
 
@@ -37,6 +42,7 @@ let printNav = () => {
 				<li><Link to="/about">About</Link></li>
 				<li><Link to="/game">Game</Link></li>
 				<li><Link to="/ch2">Ch2</Link></li>
+				<li><Link to="/ch3">Ch3</Link></li>
 				<li><Link to="/">Home</Link></li>
 			</ul>
 		</nav>
@@ -64,6 +70,12 @@ function App() {
 				<Route path="about" element={<About />} />
 				<Route path="game" element={<Game />} />
 				<Route path="ch2" element={<Ch2 />} />
+				<Route path="ch3" element={<Ch3 />} />
+
+				{/* パスの定義はこの場所でしないと反映されない。理由は不明 */}
+				<Route exact path="ch3/ch3sub" element={<Ch3sub />} />
+				<Route exact path="ch3/ch3sub2" element={<Ch3sub2 />} />
+				<Route exact path="ch3/ch3sub3" element={<Ch3sub3 />} />
 			</Routes>
 			<footer style={footer_st} >
 				{printNav()}
