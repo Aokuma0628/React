@@ -7,6 +7,9 @@ import Ch3 from "./Ch3";
 import Ch3sub from "./Ch3sub";
 import Ch3sub2 from "./Ch3sub2";
 import Ch3sub3 from "./Ch3sub3";
+import Ch4 from "./Ch4";
+import Ch4_1 from "./Ch4_1";
+import Ch4_2 from "./Ch4_2";
 import './App.css';
 
 
@@ -43,6 +46,7 @@ let printNav = () => {
 				<li><Link to="/game">Game</Link></li>
 				<li><Link to="/ch2">Ch2</Link></li>
 				<li><Link to="/ch3">Ch3</Link></li>
+				<li><Link to="/ch4">Ch4</Link></li>
 				<li><Link to="/">Home</Link></li>
 			</ul>
 		</nav>
@@ -71,11 +75,14 @@ function App() {
 				<Route path="game" element={<Game />} />
 				<Route path="ch2" element={<Ch2 />} />
 				<Route path="ch3" element={<Ch3 />} />
+				<Route path="ch4" element={<Ch4 />} />
 
 				{/* パスの定義はこの場所でしないと反映されない。理由は不明 */}
 				<Route exact path="ch3/ch3sub" element={<Ch3sub />} />
 				<Route exact path="ch3/ch3sub2" element={<Ch3sub2 />} />
 				<Route exact path="ch3/ch3sub3" element={<Ch3sub3 />} />
+				<Route exact path="ch4/ch4_1" element={<Ch4_1 />} />
+				<Route exact path="ch4/ch4_2" element={<Ch4_2 />} />
 			</Routes>
 			<footer style={footer_st} >
 				{printNav()}
