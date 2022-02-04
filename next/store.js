@@ -1,5 +1,27 @@
+/* eslint-disable node/no-unsupported-features/es-syntax */
+
 import { createStore, applyMiddleware } from 'redux';
 import thunkMiddleware from 'redux-thunk';
+import { initializeApp }  from 'firebase/app';
+
+const config = {
+	apiKey: 'AIzaSyB8KUum8eTrCEuxXZSrZE6U-cEK3twP8aY',
+	authDomain: 'buntyo-project.firebaseapp.com',
+	databaseURL: 'https://buntyo-project-default-rtdb.asia-southeast1.firebasedatabase.app',
+	projectId: 'buntyo-project',
+	storageBucket: 'buntyo-project.appspot.com',
+	messageingSenderId: '899552126599',
+};
+
+var fireapp;
+try {
+	initializeApp(config);
+}
+catch (error) {
+	console.log(error.message);
+}
+
+export default fireapp;
 
 /**** カウンターのレデューサー ***** 
 const initial = {
@@ -61,6 +83,8 @@ function calcReducer(state = initial, action) {
 				number: [],
 				result: 0,
 			};
+		case 'test':
+			return state;
 		default:
 			return state;
 	}

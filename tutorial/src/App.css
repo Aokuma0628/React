@@ -22,3 +22,20 @@ input:invalid {
 input:valid {
 	border: 1px solid blue;
 }
+
+th {
+	font-size: 14px;
+	text-align: 1left;
+	padding: 5px 20px;
+	margin: 0px;
+	border-bottom: 1px solid gray;
+}
+
+td {
+	font-size: 14px;
+	font-weight: plain;
+	text-align: left;
+	padding: 5px 20px;
+	margin: 0px;
+	border-bottom: 1px solid gray;
+}

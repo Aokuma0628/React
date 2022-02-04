@@ -13,6 +13,11 @@ export default () => <div>
 				<a>Go to Other page >></a>
 			</Link>
 		</div>
+		<div id='fire'>
+			<Link href='/fire'>
+				<a>Go to Fire page >></a>
+			</Link>
+		</div>
 		<div id='calc'>
 			<Link href='/calc'>
 				<a>Go to Calc page >></a>
