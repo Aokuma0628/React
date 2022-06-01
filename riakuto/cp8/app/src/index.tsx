@@ -1,6 +1,8 @@
 import { StrictMode } from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+//import App from './App';
+//import App2 from './App2';
+import Counter from './Counter';
 import reportWebVitals from './reportWebVitals';
 
 import 'semantic-ui-css/semantic.min.css';
@@ -8,7 +10,9 @@ import './index.css';
 
 ReactDOM.render(
   <StrictMode>
-    <App />
+    {/* <App /> */}
+    {/* <App2 /> */}
+    <Counter />
   </StrictMode>,
   document.getElementById('root'),
 );
