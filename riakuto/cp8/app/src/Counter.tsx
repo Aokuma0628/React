@@ -1,4 +1,4 @@
-import { Component, ReactElement } from 'react';
+import { Component, ReactElement, SyntheticEvent } from 'react';
 import { Button, Card, Statistic } from 'semantic-ui-react';
 import './App.css';
 
@@ -14,9 +14,16 @@ class Counter extends Component<unknown, State> {
 		this.setState({ count: 0 });
 	}
 
-	increment(): void {
-		this.setState((state) => ({ count: state.count + 1 }));
-	}
+	// function型
+	// increment(): void {
+	// 	this.setState((state) => ({ count: state.count + 1 }));
+	// }
+
+	// アロー関数
+	increment = (e:SyntheticEvent): void => {
+		e.preventDefault();
+		this.setState(preveState => ({count: preveState.count + 1}));
+	};
 
 	render(): ReactElement {
 		const { count } = this.state;
@@ -36,7 +43,7 @@ class Counter extends Component<unknown, State> {
 							<Button color='red' onClick={() => this.reset()}>
 								Reset
 							</Button>
-							<Button color='green' onClick={() => this.increment()}>
+							<Button color='green' onClick={this.increment}>
 								+1
 							</Button>
 						</div>

@@ -2,6 +2,7 @@ import { VFC } from 'react';
 import CharacterList, { Character } from './CharacterList';
 import './App.css';
 
+// 関数コンポーネント
 const App: VFC = () => {
   const characters: Character[] = [
     {

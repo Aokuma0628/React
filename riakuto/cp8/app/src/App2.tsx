@@ -2,6 +2,8 @@ import { Component, ReactElement } from 'react';
 import CharacterList, { Character } from './CharacterList2';
 import './App.css';
 
+
+// クラスコンポーネント
 class App2 extends Component {
   characters: Character[] = [
     {
