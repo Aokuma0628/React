@@ -13,15 +13,15 @@ type Props = {
   characters: Character[];
 };
 
-const CharacterList: VFC<Props> = (props) => {
-  const { school, characters } = props;
+const CharacterList: VFC<Props> = ({school, characters}) => {
+  // const { school, characters } = props;
 
   return (
     <>
       <Header as="h2">{school}</Header>
       <Item.Group>
         {characters.map((character) => (
-          <Item /* key={character.id} */>
+          <Item key={character.id}>
             <Icon name='user circle' size='huge'/>
             <Item.Content>
               <Item.Header as='a'>{character.name}</Item.Header>
