@@ -3,7 +3,8 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 // import HocCounter from './HocCounter';
 // import HookCounter from './HookCounter';
-import HookTimer from './HookTimer';
+// import HookTimer from './HookTimer';
+import HookTimer2 from './HookTimer2';
 import 'semantic-ui-css/semantic.min.css'
 import reportWebVitals from './reportWebVitals';
 
@@ -14,7 +15,8 @@ root.render(
   <React.StrictMode>
     {/* <HocCounter max={100}/> */}
     {/* <HookCounter /> */}
-    <HookTimer limit={20}/>
+    {/* <HookTimer limit={20}/> */}
+    <HookTimer2 limit={20}/>
   </React.StrictMode>
 );
 
