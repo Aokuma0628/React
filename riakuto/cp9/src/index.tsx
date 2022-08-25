@@ -2,7 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 // import HocCounter from './HocCounter';
-import HookCounter from './HookCounter';
+// import HookCounter from './HookCounter';
+import HookTimer from './HookTimer';
 import 'semantic-ui-css/semantic.min.css'
 import reportWebVitals from './reportWebVitals';
 
@@ -12,7 +13,8 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     {/* <HocCounter max={100}/> */}
-    <HookCounter />
+    {/* <HookCounter /> */}
+    <HookTimer limit={20}/>
   </React.StrictMode>
 );
 
