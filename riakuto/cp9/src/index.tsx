@@ -4,7 +4,8 @@ import './index.css';
 // import HocCounter from './HocCounter';
 // import HookCounter from './HookCounter';
 // import HookTimer from './HookTimer';
-import HookTimer2 from './HookTimer2';
+// import HookTimer2 from './HookTimer2';
+import CustomHookCon from './CustomHookCon';
 import 'semantic-ui-css/semantic.min.css'
 import reportWebVitals from './reportWebVitals';
 
@@ -16,7 +17,8 @@ root.render(
     {/* <HocCounter max={100}/> */}
     {/* <HookCounter /> */}
     {/* <HookTimer limit={20}/> */}
-    <HookTimer2 limit={20}/>
+    {/* <HookTimer2 limit={20}/> */}
+    <CustomHookCon limit={20} />
   </React.StrictMode>
 );
 
